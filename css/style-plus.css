@@ -1,0 +1,458 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  /*src: url(material-icon/MaterialIcons-Regular.eot);*/ /* For IE6-8 */
+  /*src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(css/material-icon/MaterialIcons-Regular.woff2) format('woff2'),
+    url(css/material-icon/MaterialIcons-Regular.woff) format('woff'),
+    url(css/material-icon/MaterialIcons-Regular.ttf) format('truetype');*/
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+*{
+	/*border: 1px solid black;*/
+	text-decoration: none !important;
+}
+.left{
+	width: 35%;
+	height: 100%;
+	float: left;
+}
+.right{
+	width: 65%;
+	height: 100%;
+	float: left;
+}
+.userid{
+	/*margin-left: 10px;*/
+	position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+}
+.jarak{
+	margin: 10px;
+	margin-bottom: 15px;
+}
+.menu-right li{
+	list-style: none;
+}
+.tengah{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.bootstrap-select.btn-group:not(.input-group-btn), .bootstrap-select.btn-group[class*="col-"]{
+	margin-bottom: 10px;
+}
+.tombol-kanan{
+	float: right;
+	margin-right: 50px;
+}
+.tombol-kanan:hover{
+	color: white;
+}
+.overlay-input, .overlay-edit, .overlay-lihat, .overlay-pp {
+	width: calc(100% - 300px);
+	height: calc(100vh - 70px);
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: -1;
+	overflow-y: auto;
+	overflow-x: hidden;
+	/*transition: all 0.5s;*/
+	padding-top: 80px;
+	/*display: none;*/
+  	opacity: 0;
+}
+.isi-notif{
+	width: 100%;
+	padding: 15px;
+}
+.batalTambah{
+	margin-right: 10px;
+}
+.tombol-submit{
+	margin-right: 50px;
+}
+.signup-page{
+	margin: 2% auto;
+}
+.show-tick .btn{
+	padding: 6px 0px;
+	padding-right: 25px;
+}
+.action{
+	transition: all 0.3s;
+	display: inline-block;
+	cursor: pointer;
+}
+.action:nth-child(1){
+	/*color: #8BC34A;*/
+	color: #8c8c8c;
+}
+.action:nth-child(1):hover{
+	/*color: #699933;*/
+	transform: scale(1.2, 1.2);
+}
+.action:nth-child(2){
+	margin-left: 10px;
+	/*color: #f21c0d;*/
+	color: #8c8c8c;
+}
+.action:nth-child(2):hover{
+	/*color: #aa1409;*/
+	transform: scale(1.3, 1.3);
+}
+.tombol-kanan{
+	background: #333333;
+	color: white;
+}
+/*.tombol-kanan:hover{
+	color: white;
+}*/
+/*.dataTables_wrapper label{
+	width: 100%;
+	float: right;
+}*/
+div.dataTables_wrapper div.dataTables_filter label{
+	text-align: right;
+	display: none !important;
+}
+.dt-buttons{
+	display: none;
+}
+/*table.dataTable{*/
+/*    max-width : auto !important;*/
+/*}*/
+table{
+	border: none !important;
+	border-radius: 5px;
+	overflow: hidden;
+}
+table.table-bordered.dataTable{
+	border-collapse: collapse !important;
+}
+div.dataTables_wrapper div.dataTables_paginate,
+div.dataTables_wrapper div.dataTables_info{
+	display: none;
+}
+table tr{
+	/*background: #4d4d4d !important;*/
+	border: none !important;
+}
+table tr th{
+	/*background: #333333;*/
+	background: #eee;
+}
+table tr th,
+table tr td{
+	border: none !important;
+	/*border-bottom: 1px solid #333333 !important;*/
+}
+div.dataTables_wrapper div.dataTables_filter input,
+.input-group input[type="text"], .input-group .form-control,
+.form-group .form-control{
+	background: none;
+}
+.form-group .form-control{
+	/*color: white;*/
+}
+.form-control{
+	/*color: white;*/
+}
+.open > .dropdown-menu{
+	/*background: #1c1c1c;*/
+}
+.open > .dropdown-menu li a{
+	/*color: #747474;*/
+	transition: all 0.3s;
+}
+.dropdown-menu .divider{
+	/*background: #333333;*/
+}
+.open > .dropdown-menu li a:hover{
+	/*color: white;*/
+}
+td{
+	/*color: white;*/
+}
+.card .header{
+	/*border-bottom: 2px solid #333333;*/
+}
+.table-responsive{
+	border: none;
+}
+.sidebar{
+	/*background: #1c1c1c;*/
+	/*box-shadow: 2px 0px 20px 0px rgba(0,0,0,.7);*/
+	box-shadow: 2px 0px 20px 0px rgba(0,0,0,.2);
+}
+.theme-light-blue .sidebar .legal{
+	/*background: #1c1c1c;*/	
+}
+.sidebar .legal{
+	/*border-top: 2px solid #333333;*/
+}
+.sidebar .menu .list .header{
+	/*background: #333333;*/
+}
+.card{
+	/*background: #262626;*/
+	border-radius: 5px;
+}
+.block-header h2{
+	/*color: #999999;*/
+}
+.card .header h2{
+	/*color: #b3b3b3;*/
+}
+.card .body{
+	/*color: #999999;*/
+}
+body{
+	/*background: #333333;
+	color: #999999;*/
+}
+.sidebar .menu .list li,
+.sidebar .menu .list .active{
+	transition: all 0.3s;
+}
+.sidebar .menu .list li:hover span,
+.sidebar .menu .list .active:hover{
+	/*color: white;*/
+}
+.sidebar .menu .list li:hover,
+.sidebar .menu .list .active:hover{
+	/*background: #333333 !important;*/
+}
+.sidebar .menu .list a span{
+	/*color: #999999;	*/
+	transition: all 0.3s;
+}
+.user-info{
+	/*overflow: hidden;*/
+}
+.sidebar .user-info{
+	border-bottom: none;
+}
+.theme-light-blue .sidebar .menu .list li.active > :first-child i, .theme-light-blue .sidebar .menu .list li.active > :first-child span{
+	/*color: white;*/
+}
+.navbar .navbar-nav{
+	/*background: #333333 !important;*/
+}
+
+
+.sidebar{
+	height: 100vh !important;
+	top: 0;
+	z-index: 998 !important;
+	position: fixed;
+}
+
+.navbar{
+	width: calc(100% - 300px);
+	left: 300px;
+	height: 70px;
+	/*background: #333333 !important;*/
+}
+.navbar-brand{
+	position: fixed;
+}
+.bars{
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: all 0.6s;
+}
+.bars-open{
+	left: 300px;
+}
+.left-layout{
+    width: 56.5% !important;  
+    float: left;
+    /*height: 495px;*/
+}
+.right-layout{
+    width: 40.5% !important; 
+    float: left; 
+    margin-right: 3%;
+    /*height: 495px;*/
+    padding-bottom: 25px;
+    overflow: hidden;
+}
+.sampul{
+	width: 100%;
+	position: absolute;
+}
+.sampul-akun{
+	width: 100%;
+	height: 178px;
+	position: relative;
+}
+.photo-profile{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	bottom: -80px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+}
+.photo-profile-nav{
+	width: 60px;
+	height: 60px;
+	background: #eee;
+
+	border-radius: 50%;
+    vertical-align: bottom !important;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-profile-nav img{
+	width: 100%;
+	height: auto;
+}
+.photo-profile-frame{
+	width: 150px;
+	height: 150px;
+	background: #eee;
+	overflow: hidden;
+	position: absolute;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.photo-profile img{
+	width: 100%;
+}
+#editPP{
+	cursor: pointer;
+}
+.photo-profile .edit-pp{
+	position: absolute;
+	right: -10px;
+	bottom: 5%;
+	width: 50px;
+	height: 50px;
+	background: rgba(3, 169, 244, .8);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 2px 0px 20px 0px rgba(0,0,0,.4);
+}
+.profile{
+	width: 100%;
+	margin-top: 110px;
+	font-size: 17px;
+}
+.profile p{
+	text-align: center !important;
+}
+.profile-name{
+	font-size: 20px;
+}
+.profile-type{
+	font-size: 15px;
+}
+.spanlabel{
+    font-size: 12px;
+    font-weight: normal;
+    color: #aaa;
+}
+#edit-profile-dua, #passwordValue{
+	display: none;
+}
+@media screen and (max-width: 1200px){
+
+	.overlay-input{
+		width: 100% !important;
+	}
+	.tengah{
+		width: 60%;
+	}
+	.navbar{
+		width: 100%;
+		left: 0px;
+	}
+
+}
+@media (max-width: 900px){
+    .left-layout{
+        width: 100% !important;
+        float: none;
+    }
+    .right-layout{
+        width: 100% !important;
+        float: none; 
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 768px){
+
+	.tengah{
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 480px){
+
+	.tengah{
+		width: 95%;
+	}
+
+}
